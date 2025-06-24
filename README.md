@@ -11,3 +11,15 @@
     - Создание пользователя
     - Вход пользователя
     - Cоздание заказа
+
+**Установка зависимостей**
+
+> `pip install -r requirements.txt`
+
+**Запуск автотестов и создание HTML-отчета**
+
+> `pytest --alluredir=allure-results`
+
+**Открыть HTML-отчет**
+
+> `allure serve allure-results` 
