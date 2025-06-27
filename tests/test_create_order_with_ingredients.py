@@ -17,5 +17,6 @@ class TestCreateBurgerWithIngrefients():
 
         with allure.step('Проверка что заказ создан'):
             data = response.json()
+            assert status_code == 200
             for key in Flag.successful_create_burger:
                 assert key in data

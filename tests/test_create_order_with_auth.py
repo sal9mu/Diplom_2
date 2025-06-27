@@ -20,6 +20,7 @@ class TestCreateOrderWithAuth():
             response = requests.post(f'{URL.MAIN_URL}{URL.CREATE_ORDER}', json = order_data)
 
         with allure.step('Проверка что заказ создан'):
+            assert status_code == 200
             data = response.json()
             for key in Flag.create_order_success:
                 assert key in data

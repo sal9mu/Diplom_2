@@ -22,3 +22,10 @@ class Flag:
     create_user_success = ('accessToken' , 'refreshToken', 'success')
     create_order_success = ('name', 'order', 'success')
     successful_create_burger = ('name', 'order', 'success')
+
+class InvalidDataForOrder:
+    invalid_data = {"ingredients": '00000000000000000000000'}
+
+class IncorrectLogin:
+    incorrect_data = [{'email': '', 'password': create_user[3]},
+                      {'email': create_user[2], 'password': ''}]
